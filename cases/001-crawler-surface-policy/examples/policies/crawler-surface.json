@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "crawler-surface",
+  "note": "Example only. Demonstrates identity x request-surface policy for a commerce profile.",
+  "rules": [
+    {
+      "id": "block-crawlers-on-transactional-surface",
+      "name": "Crawler transactional surface example",
+      "action": "block",
+      "physical_group": "block",
+      "enabled": true,
+      "expression": "((cf.verified_bot_category eq \"Search Engine Crawler\" or cf.verified_bot_category eq \"AI Search\" or cf.verified_bot_category eq \"AI Crawler\" or cf.verified_bot_category eq \"Page Preview\" or lower(http.user_agent) contains \"meta-webindexer\" or lower(http.user_agent) contains \"googlebot\" or lower(http.user_agent) contains \"bingbot\") and ((http.request.uri.path eq \"/cart\" or starts_with(http.request.uri.path, \"/cart/\")) or (http.request.uri.path eq \"/checkout\" or starts_with(http.request.uri.path, \"/checkout/\")) or (http.request.uri.path eq \"/my-account\" or starts_with(http.request.uri.path, \"/my-account/\")) or http.request.uri.query contains \"add-to-cart=\" or http.request.uri.query contains \"remove_item=\" or http.request.uri.query contains \"wc-ajax=\"))"
+    }
+  ]
+}

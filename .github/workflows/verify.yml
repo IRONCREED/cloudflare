@@ -1,0 +1,25 @@
+name: Verify Case 001
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  fixtures:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: PHP runtime
+        run: php --version
+      - name: Syntax
+        run: find cases -name '*.php' -print0 | xargs -0 -n1 php -l
+      - name: Offline fixtures
+        run: php cases/001-crawler-surface-policy/tests/run.php
+      - name: Explicit write gate
+        shell: bash
+        run: |
+          if php cases/001-crawler-surface-policy/bin/apply.php --zone=domain-02.example > /tmp/cfops-gate.txt 2>&1; then
+            cat /tmp/cfops-gate.txt
+            exit 1
+          fi
+          grep -F 'Refusing write without explicit --apply' /tmp/cfops-gate.txt

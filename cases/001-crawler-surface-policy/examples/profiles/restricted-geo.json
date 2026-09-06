@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "profile": "restricted-geo",
+  "policies": [
+    "scanner-user-agents",
+    "country-policy"
+  ]
+}

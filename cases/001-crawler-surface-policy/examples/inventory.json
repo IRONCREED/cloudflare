@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "phase": "http_request_firewall_custom",
+  "managed_prefix": "[CFOPS]",
+  "max_physical_rules": 5,
+  "zones": [
+    "domain-01.example",
+    "domain-02.example",
+    "domain-03.example"
+  ]
+}

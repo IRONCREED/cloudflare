@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "zone": "domain-03.example",
+  "profile": "restricted-geo",
+  "additional_policies": [],
+  "disabled_policies": [],
+  "inline_rules": [
+    {
+      "id": "forum-non-local-challenge-example",
+      "name": "Hostname-specific forum example",
+      "action": "managed_challenge",
+      "physical_group": "challenge",
+      "enabled": true,
+      "expression": "(http.host eq \"forum.domain-03.example\" and ip.src.country ne \"UA\")"
+    }
+  ]
+}

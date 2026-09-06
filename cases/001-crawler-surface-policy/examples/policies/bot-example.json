@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "bot-example",
+  "note": "Example only. Decide which automated clients are useful for each site before enabling a block.",
+  "rules": [
+    {
+      "id": "block-selected-ai-training-crawlers",
+      "name": "Bot policy example",
+      "action": "block",
+      "physical_group": "block",
+      "enabled": true,
+      "expression": "(cf.verified_bot_category eq \"AI Crawler\" or lower(http.user_agent) contains \"bytespider\" or lower(http.user_agent) contains \"ccbot\")"
+    }
+  ]
+}

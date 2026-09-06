@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "project": "Cloudflare Operations",
+  "namespace": "ic-cf-*",
+  "status": "draft",
+  "acts": [
+    {
+      "id": "ic-cf-constitution-adoption-001",
+      "path": "CONSTITUTION.md",
+      "status": "working-draft"
+    },
+    {
+      "id": "ic-cf-profile-001",
+      "path": "governance/PROFILE.md",
+      "status": "working-draft"
+    },
+    {
+      "id": "ic-cf-licensing-map-001",
+      "path": "LICENSE.md",
+      "status": "working"
+    },
+    {
+      "id": "ic-cf-standalone-migration-2026-09-06",
+      "path": "governance/attestations/standalone-migration-2026-09-06.json",
+      "status": "preparation-record"
+    }
+  ]
+}

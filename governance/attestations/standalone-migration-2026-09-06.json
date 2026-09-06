@@ -1,0 +1,248 @@
+{
+  "id": "ic-cf-standalone-migration-2026-09-06",
+  "status": "prepared-under-explicit-user-instruction",
+  "date": "2026-09-06",
+  "source": {
+    "repository": "pan-canon/TheWorldOfCanon",
+    "path": "at-work/cloudflare",
+    "tree": "78b314e5fb1902ee1a2c36058a7e9b9e4fff96d6",
+    "files": [
+      {
+        "path": ".gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b6dc76c1d5264bfeccbc3ca1859449dd2b2cfc00"
+      },
+      {
+        "path": "CONSTITUTION.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c8ed6b2d7867eed736ffa21dff397b0f89cc0f21"
+      },
+      {
+        "path": "LICENSE.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a7f7be5ff9d611c742d50d75ad85f1f18588edc7"
+      },
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0b4062dc4cd119d0064d9c4b1674598af0017b35"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/.env.example",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1c9b626c8f137b62d3d5986ac170515acbc9b0e5"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "28ff8f15f4cec8dc75c7b125ed0c0f778870dd18"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/bin/apply.php",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2aa68f7d32f02396f81e2edabd016805e92f8a03"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/bin/audit.php",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "083d686c301c453df0c5fd5192c2bb72636a4808"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/bin/compile.php",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "502b2e5567a05affb71c2160304471dc5313e6f4"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/bin/export.php",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "15df9477eda85b477e0d865ab61316feb2a7d252"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/bin/plan.php",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8dec20c037da4a0a786b205dbd8b003c0cdbed3c"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/bin/rollout.php",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "aeaebd8bd40a6deb6fd4b87aa1c344540fd43126"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/examples/inventory.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "eb449c40704a019a58f48ea1bc02bf6814a31332"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/examples/policies/bot-example.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "51c35dc0f74506eca4578a7705443dc92f1eef31"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/examples/policies/country-policy.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7f5f96cfb79b3e507e0ed233b726a2154c5f2092"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/examples/policies/crawler-surface.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "68978a99733ef1d53c1944c209eaee9e874f8f56"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/examples/policies/named-ip-list.example.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "67f7a8be2c7218c6dcf41b5b709b692f8cb916b5"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/examples/policies/scanner-user-agents.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "a4770f55b92fe9f37d2548b799c366981df20ce7"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/examples/profiles/commerce.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "4bd1099eb75e615ba7c917817e725f6955750b3d"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/examples/profiles/default.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "b90a7b0b8a5731b24f5161879c16d6bef8cc7a58"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/examples/profiles/restricted-geo.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d640e139c644c5b617dedbee5642ca020d86df76"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/examples/zones/domain-01.example.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6bc6ec81c6ef83a375d5dea0e0e41d5934be88bb"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/examples/zones/domain-02.example.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bc397168f9a6eb10ecfb86c69e13ee47dc06edb9"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/examples/zones/domain-03.example.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "37715944d3d787cd2d88474972381b8a21e1fa96"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/runtime/.gitkeep",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/src/Cli.php",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0985b6aa55ce8d8fe61d341cc464bf7fabad68ca"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/src/CloudflareApi.php",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6529f66062f3aa88508267b4ea760d153c731b36"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/src/Json.php",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1cd808fad582e54cbf3b637e0ae5c683dc0c79c5"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/src/PolicyCompiler.php",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "8a821a240a3e3e9d05b8044832c9c1459b901dff"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/src/Project.php",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "19ac4c18c67b3d724635eb4bb1e69f47f5fc5b86"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/src/RulesetManager.php",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "471b88bdc65d496c6fe6c469659a0d9f2bc16438"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/src/bootstrap.php",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "09bb7a8e8e838879f2c05f6bfa666929f30ea1a3"
+      },
+      {
+        "path": "cases/001-crawler-surface-policy/tests/run.php",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d133d812d346157527da9d62d5c78aa0dee3a0a4"
+      },
+      {
+        "path": "code-constitution",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "220dc9c286ae06f8b6ed60cdda75112eed0408ed"
+      },
+      {
+        "path": "governance/PROFILE.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e6a0a61082c3c6a35b70dce798ac1de3b8359249"
+      },
+      {
+        "path": "governance/acts.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0fb35988e1e5cd0bf8db51e798a1edc5306807fe"
+      },
+      {
+        "path": "repository-licensing-policy",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "6e4c2627717c079827ed4aa9044a5346b3ea3ddb"
+      }
+    ]
+  },
+  "destination": "https://github.com/IRONCREED/cloudflare",
+  "sourceRetained": true,
+  "productionSecurityWrites": false,
+  "visibilityChange": false,
+  "humanReleaseRatification": "pending",
+  "verification": {
+    "localPhp": "unavailable in editing environment",
+    "githubActions": "Verify Case 001 required before release"
+  },
+  "changes": [
+    "Standalone paths and root submodule declarations",
+    "Expression comparison preserves quoted whitespace",
+    "Unique deployment evidence directories"
+  ]
+}

@@ -1,0 +1,20 @@
+# Local Cloudflare credentials and environment
+.env
+.env.*
+!.env.example
+secrets/
+*.token
+*token.txt
+
+# Runtime state: snapshots, backups, reports
+cases/*/runtime/*
+!cases/*/runtime/.gitkeep
+
+# Local/private overlays
+cases/*/local/
+
+# Tool noise
+.DS_Store
+Thumbs.db
+*.log
+*.tmp

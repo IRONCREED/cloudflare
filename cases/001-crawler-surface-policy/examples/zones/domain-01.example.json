@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "zone": "domain-01.example",
+  "profile": "default",
+  "additional_policies": [],
+  "disabled_policies": []
+}

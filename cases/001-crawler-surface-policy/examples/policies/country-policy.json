@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "id": "country-policy",
+  "note": "Example only. Country and continent choices are placeholders derived from one operational pattern, not a recommended global baseline.",
+  "rules": [
+    {
+      "id": "challenge-selected-countries",
+      "name": "Country policy example",
+      "action": "managed_challenge",
+      "physical_group": "challenge",
+      "enabled": true,
+      "expression": "(not cf.client.bot and ip.src.country in {\"CN\" \"TR\"})"
+    },
+    {
+      "id": "block-tor-network-example",
+      "name": "Network policy example",
+      "action": "block",
+      "physical_group": "block",
+      "enabled": true,
+      "expression": "(ip.src.continent eq \"T1\")"
+    }
+  ]
+}

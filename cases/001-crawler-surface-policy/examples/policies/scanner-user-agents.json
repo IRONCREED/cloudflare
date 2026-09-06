@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "scanner-user-agents",
+  "note": "Example only. User-Agent matching is spoofable and must not be treated as strong identity.",
+  "rules": [
+    {
+      "id": "challenge-obvious-scanner-ua",
+      "name": "Scanner User-Agent example",
+      "action": "managed_challenge",
+      "physical_group": "challenge",
+      "enabled": true,
+      "expression": "(not cf.client.bot and (http.user_agent eq \"\" or lower(http.user_agent) contains \"sqlmap\" or lower(http.user_agent) contains \"nikto\" or lower(http.user_agent) contains \"nuclei\" or lower(http.user_agent) contains \"wpscan\"))"
+    }
+  ]
+}

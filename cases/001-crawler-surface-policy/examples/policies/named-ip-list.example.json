@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "id": "named-ip-list-example",
+  "note": "Optional example only. Requires a Cloudflare named IP list called example_blocklist and is not enabled by any bundled profile.",
+  "rules": [
+    {
+      "id": "block-named-ip-list",
+      "name": "Named IP list example",
+      "action": "block",
+      "physical_group": "block",
+      "enabled": true,
+      "expression": "(ip.src in $example_blocklist)"
+    }
+  ]
+}
